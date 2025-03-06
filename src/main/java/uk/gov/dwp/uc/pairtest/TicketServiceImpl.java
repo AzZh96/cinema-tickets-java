@@ -39,7 +39,8 @@ public class TicketServiceImpl implements TicketService {
     
         int totalTickets = 0;
         boolean hasAdultTicket = false;
-    
+        
+        // Check total Tickets and if Adult Ticket
         for (TicketTypeRequest request : ticketTypeRequests) {
             totalTickets += request.getNoOfTickets();
     
